@@ -11,26 +11,23 @@
             color: #777;
         }
 
-        .bgimg-1, .bgimg-2, .bgimg-3 {
+        .bgimg-1 {
             position: relative;
             opacity: 0.65;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-        }
-
-        .bgimg-1 {
+            
             background-image: url("./office_blur.png");
             height: 100%;
+            
+            display: flex;
+            justify-content: center; /* align horizontal */
+            align-items: center; /* align vertical */
         }
 
-        .caption {
-            position: absolute;
-            left: 0;
-            top: 50%;
-            width: 100%;
-            text-align: center;
-            color: #000;
+        .logo {
+            background-image: url("./logo.png");
         }
 
             .caption span.border {
@@ -56,10 +53,7 @@
 <body>
 
     <div class="bgimg-1">
-        <div class="caption">
-            <span class="border">FULL PAGE</span><br>
-            <span class="border">BACKGROUND IMAGE</span>
-        </div>
+        <div class="logo"></div>
     </div>
 
     <p id="copyright" style="padding:5px 15px">Copyright (c) 2020, 12410613 Canada Corporation</p>
